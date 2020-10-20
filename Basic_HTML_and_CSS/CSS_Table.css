@@ -1,0 +1,16 @@
+table {
+  background-color: lightskyblue;
+  border: 5px solid black;
+}
+
+th {
+  color: gold;
+}
+
+tr {
+  color: Brown;
+}
+
+td:hover {
+  font-weight: bolder;
+}
