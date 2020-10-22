@@ -1,0 +1,23 @@
+body{
+  text-align: center;
+}
+
+#LoFi {
+  background-color: goldenrod;
+  border: 10px solid black;
+}
+
+#EightiesMusic {
+  background-color: lightgreen;
+  border: 10px solid red;
+}
+
+#Kpop {
+  background-color: skyblue;
+  border: 10px solid orange;
+}
+
+#VG {
+  background-color: purple;
+  border: 10px solid yellow;
+}
