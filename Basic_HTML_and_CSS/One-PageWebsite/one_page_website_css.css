@@ -1,23 +1,37 @@
 body{
   text-align: center;
+  background-color: lightgrey;
+}
+
+.MusicVideos {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 #LoFi {
   background-color: goldenrod;
   border: 10px solid black;
+  font-family: arial;
 }
 
 #EightiesMusic {
   background-color: lightgreen;
   border: 10px solid red;
+  font-family: verdana;
 }
 
 #Kpop {
   background-color: skyblue;
   border: 10px solid orange;
+  font-family: impact;
 }
 
 #VG {
-  background-color: purple;
+  background-color: darkorchid;
   border: 10px solid yellow;
+  font-family: Tahoma;
+}
+
+#Kpop h5 {
+  font-family: "Times new Roman";
 }
