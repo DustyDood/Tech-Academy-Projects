@@ -119,10 +119,11 @@ section {
 }
 
 .wrap {
-    height: 100%;
+
     width: 100%;
 
     position: fixed;
+    z-index: 1;
 
     /*Why does adding a z-index to the wrap break this?????
     Without it, the buttons won't stay in front of the photos as we scroll...
@@ -133,9 +134,7 @@ section {
     top: 0;
     left: 0;
     text-align: center;
-}
 
-.menu_container {
     max-height: 340px;
     margin: 0% auto;
     content: " ";
