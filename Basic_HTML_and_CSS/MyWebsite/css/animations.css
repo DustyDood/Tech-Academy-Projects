@@ -32,7 +32,8 @@
 
 .menu li:hover {
     color: #f00;
-    background-color: rgba(100, 65, 0, 0.3);
+    background-color: rgba(100, 65, 0, 1);
+    font-size: 18px;
 
 }
 
@@ -62,7 +63,7 @@
     /*Hm... I don't think I like it as exactly 300px wide, but 30% seems too much for some.
     I'll keep it as an option, but I'll add padding for now so things don't have to be super close
     */
-    
+
     padding: 15px;
     height: 169px; 
 }
