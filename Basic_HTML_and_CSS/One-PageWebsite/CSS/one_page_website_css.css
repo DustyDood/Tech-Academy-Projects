@@ -10,6 +10,8 @@ body{
   padding-right: 5%;
 }
 
+/*Customizing each block to give them a little personality*/
+
 #LoFi {
   background-color: goldenrod;
   border: 10px solid black;
@@ -43,16 +45,28 @@ body{
   border-radius: 10px;
 }
 
+table {
+  width: 100%;
+}
+
+.test {
+  width: 10%;
+}
+
+/*Giving a little character to the survey section*/
+
+
 input[type=text] {
   color: red;
-  width: 75%;
+  width: 100%;
   margin: 5px 0px;
   border: 1px solid black;
   border-radius: 12px;
-  padding: 5px;
+  padding: 5px 15px 5px 0px;
 
 }
 
+/*Giving emphasis on what part of the survey you're entering for*/
 input[type=text]:focus {
   background-color: bisque;
   font-weight: bold;
@@ -60,9 +74,18 @@ input[type=text]:focus {
 
 form {
   color: royalblue;
+  display: inline-block;
+  width: 100%;
 }
 
-input {
-  padding: 10px 20px;
-  font-weight: bolder;
+/*This helps center the survey area while also keeping the text orderly!
+Before, just centering the survey would cause the text boxes to stretch out a little further.
+This was due to the text from the First Name, Last Name, etc. not being equal lengths!
+By using a table, it ensure that all input fields have the same start point, giving it a bit more uniformity*/
+#surveyDiv {
+  width: 75%;
+  display: inline-block;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
 }
