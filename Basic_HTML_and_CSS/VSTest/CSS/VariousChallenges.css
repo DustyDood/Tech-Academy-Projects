@@ -1,0 +1,168 @@
+
+/*NavBar work*/
+.navbar {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    top: 0;
+
+}
+
+nav {
+    text-align: center;
+    background-color: lightblue;
+    padding: 1em 2em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+nav a {
+    color: red;
+    padding: .75em 1em;
+    transition-duration: .5s;
+    border: 2px solid black;
+    
+}
+
+nav a:hover {
+    font-weight: bolder;
+    font-size: 1.25em;
+}
+
+/*Working on image effects*/
+
+.imageCentering {
+    text-align: center;
+    background-color: bisque;
+    position: relative;
+    top: 50px;
+}
+
+.imageCentering img {
+    height: 50%;
+    width: 50%;
+    filter: sepia(100%);
+    border: 5px double brown;
+    border-radius: 50%;
+
+}
+
+.imageCentering img:hover {
+    animation-name: aniTest;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/*Giving an animation to the image; switches back and forth between sepia and grayscale*/
+
+@keyframes aniTest {
+    0% {filter: sepia(100%);}
+    25% {filter: sepia(0%);}
+    26% {filter: grayscale(0%);}
+    50% {filter: grayscale(100%);}
+    75% {filter: grayscale(0%);}
+    76% {filter: sepia(0%);}
+    100% {filter: sepia(100%);}
+}
+
+.imageText {
+    display: false;
+    position: absolute;
+    width: 20%;
+    left: 40%;
+    right: 40%;
+    bottom: 20%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, .4);
+    color: white;
+}
+
+/*Table Properties*/
+
+
+
+.foo {
+    text-align: center;
+    margin: 10em 0em;
+}
+
+table {
+    border: 5px dotted red;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+}
+
+td, td {
+    padding: 10px;
+}
+
+th {
+    background-color: cyan;
+}
+
+/*Two Columns Properties*/
+
+.twoColumns {
+    display: flex;
+    margin: 5em 0em;
+}
+
+.column {
+    flex: 50%;
+    text-align: center;
+    height: 35em;
+    color: blueviolet;
+    border: 2px solid salmon;
+    background-color: springgreen;
+
+}
+
+.column p {
+    transition-duration: .5s;
+    transition-timing-function: ease-in;
+}
+
+.column p:hover {
+    font-size: 125%;
+    color: royalblue;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+}
+
+/*Koala Video*/
+
+.koalaVideo {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.koalaVideo video {
+    width: 50%;
+    height: auto;
+    opacity: 1;
+}
+
+.videoTextOverlay {
+    position: absolute;
+    left: 50%;
+    bottom: 95%;
+    transform: translate(-50%, 100%);
+    width: 50%;
+    background-color: black;
+    color: white;
+
+}
