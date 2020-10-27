@@ -1,0 +1,77 @@
+body {
+    margin: 0%;
+}
+
+/*Navbar*/
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar a {
+    display: block;
+    float: left;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    transition-duration: .5s;
+}
+
+.navbar a:hover {
+    color: blue;
+    font-size: bold;
+    background-color: blanchedalmond;
+}
+
+/*Introduction Section*/
+.introduction {
+    display: block;
+    position: static;
+}
+
+.zebraContainer {
+    width: 100%;
+    height: auto;
+    z-index: -1;
+    position: absolute;
+    display: block;
+    top: 63px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.zebraContainer img {
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.introText {
+    width: 100%;
+    padding: 20px;
+    margin-top: 50%;
+    background-color: white;
+    text-align: center;
+
+    opacity: .8;
+}
+
+/*About Section*/
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    background-color: white;
+    text-align: center;
+}
