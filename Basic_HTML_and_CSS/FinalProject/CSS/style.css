@@ -63,15 +63,44 @@ body {
     text-align: center;
 
     opacity: .8;
+    font-family: Ipact, serif;
 }
 
 /*About Section*/
 .row {
     display: flex;
+    font-family: roboto, sans-serif;
+    position: relative;
 }
 
 .column {
     flex: 50%;
-    background-color: white;
+    height: 25em;
+    background-color: beige;
     text-align: center;
+
+}
+
+.textColumn {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50%;
+}
+
+#ProfilePic {
+    width: 100%;
+    height: auto;
+}
+
+.profileText {
+    position: absolute;
+    z-index: 1;
+    background-color: lightblue;
+    bottom: 20px;
+    left: 25%;
+    transform: translate(-50%, 10px);
+    width: 50%;
+    opacity: .8;
 }
