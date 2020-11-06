@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
     <title>Academy Cinemas</title>
   </head>
@@ -141,13 +141,77 @@
 
         <div class="text-center" id="deals">
             
-            <form>
+            <!--<form>-->
                 <h1 class="text-primary my-5">Sign up for Movie Club Rewards!</h1>
+
+
+                <!--Removing for now, as I'm keeping it all in the modal
                 <div class="form-group">
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+                -->
+
+                <!--I'd rather have a button pop up the modal for registering rather than being just straight on the site. 
+                I'm going to remove the popover for now, but I'll keep the code in to show I watched the video/keep an option available
+                <button type="button" class="btn btn-primary popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Thank you for joining!">Submit</button>
+                -->
+
+                <!--Keeping a second button for now... The one below can be dismissed. You need to use a instead of button for a dismissable popover
+                <a tabindex="0" class="btn btn-primary" role="button" data-toggle="popover" data-trigger="focus" title="You did it!" data-content="Thank you for joining our movie club!">Submit</a>
+                -->
+
+                <!-- Button trigger modal -->
+                <!--Added a tooltip when the button is hovered!-->
+                <span data-toggle="tooltip" data-placement="top" title="We'd love to have you!">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                        Come join the club!
+                    </button>
+                </span>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Movie Club Rewards Registration</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+
+                            <form>
+                                <div class="form-group">
+                                    <label for="FirstName1">First Name</label>
+                                    <input type="fname" class="form-control" id="FirstName1" aria-describedby="FirstNameHelp">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="LastName1">Last Name</label>
+                                    <input type="lname" class="form-control" id="LastName1" aria-describedby="LastNameHelp">
+                                  </div>
+                                <div class="form-group">
+                                  <label for="InputEmail1">Email address</label>
+                                  <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                </div>
+                                <div class="form-group">
+                                  <label for="InputPassword1">Password</label>
+                                  <input type="password" class="form-control" id="InputPassword1">
+                                </div>
+                              </form>
+
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!--End Modal-->
+
+            <!--</form>-->
+
         </div>
 
         <div class="container my-5">
@@ -182,5 +246,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-  </body>
+    <script>
+        /*this is necessary for a popover to display*/
+        $("[data-toggle=popover]").popover();
+
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+        });
+
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        });
+
+    </script>
+</body>
 </html>
