@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TEST</h1>
+    <p id="XML_Example"></p>
+
+
+
+
+    <script>
+        var XML_Parser, XML_Document;
+
+        var menu = "<menu>" +
+        "<appetizer>Flatbread</appetizer>" + 
+        "<entree>Tortellini Alfredo</entree>" +
+        "<dessert>Strawberry Cheesecake</dessert>" +
+        "</menu>";
+
+        XML_Parser = new DOMParser();
+
+        XML_Document = XML_Parser.parseFromString(menu, "text/xml");
+
+        document.getElementById("XML_Example").innerHTML = XML_Document.getElementsByTagName("entree")[0].childNodes[0].nodeValue;
+
+
+
+    </script>
+</body>
+</html>
