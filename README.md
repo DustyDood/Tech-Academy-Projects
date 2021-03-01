@@ -13,4 +13,4 @@ Options include:
 4. Various Other challenges/assignments
   A: A collection of various assignemnts to show what I've learned throughout the course.
 
-I'll keep on adding projects and updating this README! as I progress through the bootcamp.
+Thank you for checking this repository out.
